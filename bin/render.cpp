@@ -83,7 +83,7 @@ int main(int argc, char* argv[]) {
     Map map(frontend,
             MapObserver::nullObserver(),
             MapOptions()
-                .withMapMode(MapMode::Static)
+                .withMapMode(MapMode::Tile)
                 .withSize(frontend.getSize())
                 .withPixelRatio(static_cast<float>(pixelRatio)),
             ResourceOptions()
